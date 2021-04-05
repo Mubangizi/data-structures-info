@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/20a97099-c7c8-4f24-8c41-c8f2104d8ca0/deploy-status)](https://app.netlify.com/sites/datastructuresgroup12/deploys)
 # data-structures-info
 A web app to showcase course content for datastructures and algorithms course unit.\
 It should cover the following:
