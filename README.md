@@ -11,6 +11,10 @@ It should cover the following:
 
 In the project directory, you can run:
 
+### `yarn install`
+
+This installs app dependencies being used.\
+
 ### `yarn start`
 
 Runs the app in the development mode.\
