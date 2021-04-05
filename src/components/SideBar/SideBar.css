@@ -1,0 +1,77 @@
+.SideBar {
+    top: 0;
+    left: 0;
+    z-index: 5!important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0;
+    background: var(--color-background);
+    border-right: 1px solid var(--color-background-light);
+
+}
+
+.SideBarHeader{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    background-color:#17223b;
+}
+
+.NavItems {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5px;
+}
+.NavItems a {
+    position: relative;
+    /* text-align: center; */
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 13px 10px;
+    outline: none;
+    font-size: 15px;
+}
+.active {
+    background-color: var(--color-blue);
+    color: white !important;
+}
+  
+.NavItems a::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgb(2, 136, 209, 0.2);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+  
+.NavItems a:hover::before {
+    width: 100%;
+}
+  
+.RemarksSection {
+    border-top: 1px solid var(--color-background-light);
+    bottom: 0 !important;
+}
+.RemarksSection p {
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--color-primary);
+}
+
+.RemarksSection p:hover {
+    color: white;
+    transition: 0.2s;
+}
