@@ -1,22 +1,8 @@
 import React from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./SideBar.css";
 
 const SideBar = () => {
-  const [open, setOpen] = React.useState(false);
-  const history = useHistory();
-
-  const handleDrawer = () => {
-    if (open === true) {
-      setOpen(false);
-    } else {
-      setOpen(true);
-    }
-  };
-
-  const sendToHome = () => {
-    history.push("/");
-  };
   return (
     <div className="SideBar">
       <div className="SideBarHeader">Data Structures and Algorithms</div>
