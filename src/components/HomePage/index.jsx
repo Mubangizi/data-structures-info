@@ -2,7 +2,7 @@ import "./HomePage.css";
 import "../Layout";
 import Layout from "../Layout";
 
-function App() {
+function HomePage() {
   return (
     <Layout>
       <div className="Home">
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
