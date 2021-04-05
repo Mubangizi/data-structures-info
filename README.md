@@ -13,7 +13,7 @@ In the project directory, you can run:
 
 ### `yarn install`
 
-This installs app dependencies being used.\
+This installs app dependencies being used.
 
 ### `yarn start`
 
