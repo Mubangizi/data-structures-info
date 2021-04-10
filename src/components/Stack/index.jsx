@@ -41,6 +41,10 @@ const Stack = () => {
     }
   };
 
+  const getStackSize = (e) => {
+    e.preventDefault();
+    setShow(stackList.length);
+  };
   useEffect(() => {}, [stackList]);
 
   return (
@@ -75,6 +79,10 @@ const Stack = () => {
               it.
             </li>
             <li>isEmpty() − check if stack is empty.</li>
+            <li>
+              size() - returns the number of items on the stack. It needs no
+              parameters and returns an integer.
+            </li>
           </ul>
         </div>
         <div className="ItemDemo">
@@ -124,6 +132,12 @@ const Stack = () => {
                   onClick={(e) => checkStackSize(e)}
                 >
                   isEmpty
+                </button>
+                <button
+                  className="ControlButton"
+                  onClick={(e) => getStackSize(e)}
+                >
+                  size
                 </button>
               </div>
             </div>

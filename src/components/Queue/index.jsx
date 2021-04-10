@@ -53,6 +53,11 @@ const Queue = () => {
     }
   };
 
+  const getQueueSize = (e) => {
+    e.preventDefault();
+    setShow(queueList.length);
+  };
+
   useEffect(() => {}, [queueList]);
 
   return (
@@ -85,6 +90,10 @@ const Queue = () => {
             </li>
             <li>isfull() − Checks if the queue is full.</li>
             <li>isEmpty() − check if queue is empty.</li>
+            <li>
+              size() - returns the number of items on the queue. It needs no
+              parameters and returns an integer.
+            </li>
           </ul>
         </div>
         <div className="ItemDemo">
@@ -140,6 +149,12 @@ const Queue = () => {
                   onClick={(e) => checkQueueSize(e)}
                 >
                   isEmpty
+                </button>
+                <button
+                  className="ControlButton"
+                  onClick={(e) => getQueueSize(e)}
+                >
+                  size
                 </button>
               </div>
             </div>

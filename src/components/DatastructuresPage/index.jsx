@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArrayComponent from "../ArrayComponent";
 import Layout from "../Layout";
 import Queue from "../Queue";
 import Stack from "../Stack";
@@ -45,13 +46,7 @@ const DatastructuresPage = () => {
           </div>
         </header>
         <content className={`ItemContent ${showContent(1)}`}>
-          <h2 className="ItemHeading">Array</h2>
-          <div className="ItemDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, optio nemo tempora deserunt libero ut nihil cum
-            dignissimos, saepe blanditiis reprehenderit assumenda sit id officia
-            vero quae quidem pariatur nostrum.
-          </div>
+          <ArrayComponent />
         </content>
         <content className={`ItemContent ${showContent(2)}`}>
           <Stack />
