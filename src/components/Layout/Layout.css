@@ -1,6 +1,13 @@
 
 .Layout main{
+    top: 0;
     margin-left: 17.5%;
-    height: 100vh;
+    height: 90vh!important;
     margin-right: 20px;
+}
+
+.Layout main > div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
