@@ -1,6 +1,6 @@
-.Layout{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+
+.Layout main{
+    margin-left: 17.5%;
     height: 100vh;
-    gap: 20px;
+    margin-right: 20px;
 }
