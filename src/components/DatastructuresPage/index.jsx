@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ArrayComponent from "../ArrayComponent";
 import Layout from "../Layout";
+import ListComponent from "../ListComponent";
 import Queue from "../Queue";
 import Stack from "../Stack";
 import "./DatastructuresPage.css";
@@ -53,6 +54,9 @@ const DatastructuresPage = () => {
         </content>
         <content className={`ItemContent ${showContent(3)}`}>
           <Queue />
+        </content>
+        <content className={`ItemContent ${showContent(4)}`}>
+          <ListComponent />
         </content>
       </div>
     </Layout>

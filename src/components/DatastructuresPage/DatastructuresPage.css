@@ -30,8 +30,20 @@
     background-color: var(--color-background-light);
     gap: 1px;
 }
+
 .ItemContent .SideLine > div{
     background-color: var(--color-background-dark);
+}
+
+@media (max-width:909px) {
+    .ItemContent .SideLine{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-background-light);
+        gap: 1px;
+        margin-bottom: 20px;
+    }    
+    
 }
 .ItemDescription{
     padding-right: 20px;
