@@ -1,6 +1,13 @@
-.Layout{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    height: 100vh;
-    gap: 20px;
+
+.Layout main{
+    top: 0;
+    margin-left: 17.5%;
+    height: 90vh!important;
+    margin-right: 20px;
+}
+
+.Layout main > div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }

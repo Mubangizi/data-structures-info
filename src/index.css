@@ -28,3 +28,12 @@ code {
   border-bottom: 1px solid var(--color-background-light);
   padding-bottom: 25px;
 }
+
+div{
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+h1{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}

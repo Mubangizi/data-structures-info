@@ -9,7 +9,9 @@
     gap: 0;
     background: var(--color-background);
     border-right: 1px solid var(--color-background-light);
-
+    height: 100%;
+    width: 16%;
+    position: fixed;
 }
 
 .SideBarHeader{
@@ -19,6 +21,11 @@
     display: flex;
     height: 150px;
     background-color:#17223b;
+    cursor: pointer;
+}
+.SideBarHeader>a{
+    text-decoration: none;
+    color:inherit;
 }
 
 .NavItems {
