@@ -7,7 +7,7 @@ function HomePage() {
     <Layout>
       <div className="Home">
         <header className="HomeHeader">
-          <h1 className="Title">Data Structures</h1>
+          <h1 className="Title">Data Structures and Algorithms</h1>
           <p>
             <code>A data structure </code>
             is a named location that can be used to store and organize data.

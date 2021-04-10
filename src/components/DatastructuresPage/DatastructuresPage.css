@@ -1,0 +1,26 @@
+.HeaderMenuItems{
+    display: flex;
+    /* gap: 20px; */
+    justify-content: start;
+    border-bottom: 1px solid var(--color-background-light);
+}
+
+.HeaderMenuItems .MenuItem{
+    padding: 5px 20px;
+    cursor: pointer;
+    border-right: 1px solid var(--color-background-light);
+}
+.HeaderMenuItems .ItemActive{
+    border-bottom: 4px solid var(--color-blue);
+}
+.HeaderMenuItems .MenuItem:hover{
+    background-color: var(--color-background-light);
+}
+
+.ItemContent{
+    display: none;
+}
+
+.ShowContent{
+    display: block;
+}

@@ -10,7 +10,7 @@ const SideBar = () => {
         <NavLink to={{ pathname: `/` }} exact={true}>
           Home
         </NavLink>
-        <NavLink to={{ pathname: `/about` }}>Basic data structures</NavLink>
+        <NavLink to={{ pathname: `/data_structures` }}>Basic data structures</NavLink>
         <NavLink to={{ pathname: `/trees` }}>Trees</NavLink>
         <NavLink to={{ pathname: `/sorting` }}>Sorting Algorithms</NavLink>
         <NavLink to={{ pathname: `/searching` }}>Searching Algorithms</NavLink>
