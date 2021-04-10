@@ -26,7 +26,7 @@
 }
 .ItemContent .SideLine{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     background-color: var(--color-background-light);
     gap: 1px;
 }

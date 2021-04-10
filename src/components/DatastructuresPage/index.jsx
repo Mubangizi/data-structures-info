@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../Layout";
+import Queue from "../Queue";
 import Stack from "../Stack";
 import "./DatastructuresPage.css";
 
@@ -24,7 +25,6 @@ const DatastructuresPage = () => {
     }
   };
 
-
   return (
     <Layout>
       <div className="DatastructuresPage">
@@ -44,7 +44,7 @@ const DatastructuresPage = () => {
             ))}
           </div>
         </header>
-        <content className={`ItemContent ${showContent(2)}`}>
+        <content className={`ItemContent ${showContent(1)}`}>
           <h2 className="ItemHeading">Array</h2>
           <div className="ItemDescription">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -53,17 +53,11 @@ const DatastructuresPage = () => {
             vero quae quidem pariatur nostrum.
           </div>
         </content>
-        <content className={`ItemContent ${showContent(1)}`}>
-          <Stack/>
+        <content className={`ItemContent ${showContent(2)}`}>
+          <Stack />
         </content>
         <content className={`ItemContent ${showContent(3)}`}>
-          <h2 className="ItemHeading">Queue</h2>
-          <div className="ItemDescription">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, optio nemo tempora deserunt libero ut nihil cum
-            dignissimos, saepe blanditiis reprehenderit assumenda sit id officia
-            vero quae quidem pariatur nostrum.
-          </div>
+          <Queue />
         </content>
       </div>
     </Layout>

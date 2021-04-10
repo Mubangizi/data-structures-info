@@ -20,10 +20,10 @@ const Stack = () => {
 
   const removeItem = (e) => {
     e.preventDefault();
-    const newList = stackList;
-    newList.pop();
-    setStackList(newList);
+    stackList.pop();
+    setStackList(stackList);
     setNewValue("");
+    setShow("");
   };
 
   const ShowTopItem = (e) => {
@@ -79,7 +79,6 @@ const Stack = () => {
         </div>
         <div className="ItemDemo">
           <h3>Try a stack</h3>
-          Add data
           <form action="" autoComplete="off">
             <div className="StackView">
               <div className="StructureView">
@@ -89,6 +88,7 @@ const Stack = () => {
                   name="stackvalue"
                   value={newValue}
                   onChange={handleChange()}
+                  placeholder="Enter item here"
                 />
                 <div className="StructureContainer">
                   {stackList.length !== 0 &&

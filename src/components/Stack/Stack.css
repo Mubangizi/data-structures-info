@@ -42,7 +42,7 @@
   font-size: inherit;
   outline: none;
   border:none;
-
+  cursor: pointer;
 }
 .AddBtn{
   background-color: green;
