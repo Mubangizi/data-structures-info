@@ -7,6 +7,7 @@
 
 .HeaderMenuItems .MenuItem{
     padding: 5px 20px;
+    font-size: 1.3rem;
     cursor: pointer;
     border-right: 1px solid var(--color-background-light);
 }
@@ -23,4 +24,21 @@
 
 .ShowContent{
     display: block;
+}
+.ItemContent .SideLine{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--color-background-light);
+    gap: 1px;
+}
+.ItemContent .SideLine > div{
+    background-color: var(--color-background-dark);
+}
+.ItemDescription{
+    padding-right: 20px;
+}
+
+.ItemDemo{
+    padding-left: 20px;
+
 }
