@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./BubbleSort.css";
-import ImageIllustration from "../../assets/Bubble-sort-example-300px.gif";
+import "./MergeSort.css";
+import GifIllustration from "../../assets/Merge-sort.gif";
+import ImageIllustration from "../../assets/merge-sort-image.png";
 
-const BubbleSort = () => {
+const MergeSort = () => {
   const [newValue, setNewValue] = useState("");
   const [itemList, setItemList] = useState([]);
   const [sorted, setSorted] = useState([]);
@@ -50,74 +51,59 @@ const BubbleSort = () => {
 
   return (
     <div className="Stack">
-      <h1 className="ItemHeading">Bubble Sort</h1>
+      <h1 className="ItemHeading">Merge Sort</h1>
       <div className="SideLine">
         <div className="ItemDescription ">
-          Bubble Sort is the simplest sorting algorithm that works by repeatedly
-          swapping the adjacent elements if they are in wrong order.
+          Like <b>QuickSort</b>, Merge Sort is a{" "}
+          <b>
+            <u>Divide and Conquer algorithm</u>
+          </b>
+          . It divides the input array into two halves, calls itself for the two
+          halves, and then merges the two sorted halves. <br />
+          The <code>merge()</code> function is used for merging two halves.{" "}
+          <br />
+          The <code>merge(arr, l, m, r)</code> is a key process that assumes
+          that <code>arr[l..m]</code> and <code>arr[m+1..r]</code> are sorted
+          and merges the two sorted sub-arrays into one. See the following C
+          implementation for details.
+          <code className="CodeIllustration">
+            MergeSort(arr[], l, r)
+            <br />
+            If r {">"} l<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;1. Find the middle point to divide the array
+            into two halves:
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            middle m = l + (r-l)/2
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;2. Call mergeSort for first half:
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Call mergeSort(arr, l, m)
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;3. Call mergeSort for second half:
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Call mergeSort(arr, m+1, r)
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;4. Merge the two halves sorted in step 2 and
+            3:
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Call merge(arr, l, m, r)
+            <br />
+          </code>
           <h3>
             Illustration: {"{"}6 5 3 1 8 7 2 4{"}"}
           </h3>
-          <img src={ImageIllustration} alt="" />
+          <img src={GifIllustration} alt="" />
           <h3>
-            Example: {"{"}5 1 4 2 8{"}"}
+            Illustration: {"{"}4 8 7 2 11 1 3{"}"}
           </h3>
-          <h4>First Pass:</h4>
-          <code>
-            <li>
-              ( <b>5 1</b> 4 2 8 ) –{">"} ( <b>1 5</b> 4 2 8 ), Here, algorithm
-              compares the first two elements, and swaps since 5 {">"} 1.
-            </li>
-            <li>
-              ( 1 <b>5 4</b> 2 8 ) –{">"} ( 1 <b>4 5</b> 2 8 ), Swap since 5{" "}
-              {">"} 4
-            </li>
-            <li>
-              ( 1 4 <b>5 2</b> 8 ) –{">"} ( 1 4 <b>2 5</b> 8 ), Swap since 5{" "}
-              {">"} 2
-            </li>
-            <li>
-              ( 1 4 2 5 8 ) –{">"} ( 1 4 2 5 8 ), Now, since these elements are
-              already in order (8 {">"} 5), algorithm does not swap them.
-            </li>
-          </code>
-          <h4>Second Pass:</h4>
-          <code>
-            <li>
-              ( <b>1 4</b> 2 5 8 ) –{">"} ( <b>1 4</b> 2 5 8 )
-            </li>
-            <li>
-              ( 1 <b>4 2</b> 5 8 ) –{">"} ( 1 <b>2 4</b> 5 8 ), Swap since 4{" "}
-              {">"} 2
-            </li>
-            <li>
-              ( 1 2 <b>4 5</b> 8 ) –{">"} ( 1 2 <b>4 5</b> 8 )
-            </li>
-            <li>
-              ( 1 2 4 <b>5 8</b> ) –{">"} ( 1 2 4 <b>5 8</b> )
-            </li>
-          </code>
-          Now, the array is already sorted, but our algorithm does not know if
-          it is completed. The algorithm needs one whole pass without any swap
-          to know it is sorted.
-          <h4>Third Pass:</h4>
-          <code>
-            <li>
-              ( <b>1 2</b> 4 5 8 ) –{">"} ( <b>1 2</b> 4 5 8 )
-            </li>
-            <li>
-              ( 1 <b>2 4</b> 5 8 ) –{">"} ( 1 <b>2 4</b> 5 8 )
-            </li>
-            <li>
-              ( 1 2 <b>4 5</b> 8 ) –{">"} ( 1 2 <b>4 5</b> 8 )
-            </li>
-            <li>
-              ( 1 2 4 <b>5 8</b> ) –{">"} ( 1 2 4 <b>5 8</b> )
-            </li>
-          </code>
+          <img src={ImageIllustration} alt="" />
         </div>
         <div className="ItemDemo">
-          <h3>Try a Bubble Sort</h3>
+          <h3>Try a Merge Sort</h3>
           <form action="" autoComplete="off">
             <div className="StackView">
               <div className="StructureView">
@@ -184,4 +170,4 @@ const BubbleSort = () => {
   );
 };
 
-export default BubbleSort;
+export default MergeSort;

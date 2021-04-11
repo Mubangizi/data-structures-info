@@ -48,6 +48,9 @@
 .ItemDescription{
     padding-right: 20px;
 }
+.ItemDescription img{
+    max-width: 100%;
+}
 
 .ItemDemo{
     padding-left: 20px;
