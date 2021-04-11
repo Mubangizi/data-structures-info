@@ -1,0 +1,17 @@
+.ItemDemo .InputView{
+  display: flex;
+  font-size: 2.3rem;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.ItemDemo .InputView .InputItem{
+  padding: 2px 10px;
+  background-color: var(--color-background-light)
+}
+
+.ReturnView{
+  margin:30px 10px!important;
+  justify-content: start!Important;
+}

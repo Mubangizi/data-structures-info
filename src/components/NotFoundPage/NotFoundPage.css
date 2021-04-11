@@ -4,9 +4,11 @@
     flex-direction: column;
     justify-content:center;
     text-align: center;
+    height: 100%;
 }
 .NotFoundPage h1{
     font-size:10rem;
+    margin-bottom: 4rem;
 }
 .NotFoundHeader a{
     color: var(--color-blue)
