@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import BubbleSort from "../BubbleSort";
+import InsertionSort from "../InsertionSort";
 import Layout from "../Layout";
 import MergeSort from "../MergeSort";
-import QuickSort from "../QickSort";
+import QuickSort from "../QuickSort";
 
 import "./SortingPage.css";
 
@@ -55,7 +56,9 @@ const SortingPage = () => {
         <content className={`ItemContent ${showContent(3)}`}>
           <MergeSort />
         </content>
-        <content className={`ItemContent ${showContent(4)}`}></content>
+        <content className={`ItemContent ${showContent(4)}`}>
+          <InsertionSort />
+        </content>
       </div>
     </Layout>
   );
