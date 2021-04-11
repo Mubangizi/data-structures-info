@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ArrayComponent from "../ArrayComponent";
+import BubbleSort from "../BubbleSort";
 import Layout from "../Layout";
 import ListComponent from "../ListComponent";
 import Queue from "../Queue";
@@ -10,10 +11,10 @@ const SortingPage = () => {
   const [active, setActive] = useState(1);
 
   const menuItems = [
-    { name: "Array", id: 1 },
-    { name: "Stack", id: 2 },
-    { name: "Queue", id: 3 },
-    { name: "Lists", id: 4 },
+    { name: "Bubble Sort", id: 1 },
+    { name: "Merge Sort", id: 2 },
+    { name: "Quick Sort", id: 3 },
+    { name: "Insertion Sort", id: 4 },
   ];
 
   const checkActive = (id) => {
@@ -47,17 +48,11 @@ const SortingPage = () => {
           </div>
         </header>
         <content className={`ItemContent ${showContent(1)}`}>
-          <ArrayComponent />
+          <BubbleSort />
         </content>
-        <content className={`ItemContent ${showContent(2)}`}>
-          <Stack />
-        </content>
-        <content className={`ItemContent ${showContent(3)}`}>
-          <Queue />
-        </content>
-        <content className={`ItemContent ${showContent(4)}`}>
-          <ListComponent />
-        </content>
+        <content className={`ItemContent ${showContent(2)}`}></content>
+        <content className={`ItemContent ${showContent(3)}`}></content>
+        <content className={`ItemContent ${showContent(4)}`}></content>
       </div>
     </Layout>
   );
