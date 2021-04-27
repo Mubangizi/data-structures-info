@@ -1,36 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import TowerOfHanoiImage from "../../assets/towerofHanoi.jpg";
 import TowerGif from "../../assets/tohIllustration.gif";
 
 const TowerOfHanoi = () => {
-  const [newValue, setNewValue] = useState("");
-  const [itemList, setItemList] = useState([]);
-
-  const handleChange = () => (event) => {
-    setNewValue(event.target.value);
-  };
-
-  const getTowerOfHanoiSeq = (number) => {
-    let n1 = 0,
-      n2 = 1,
-      nextTerm;
-    const sequence = [];
-
-    for (let i = 1; i <= number; i++) {
-      sequence.push(n1);
-      nextTerm = n1 + n2;
-      n1 = n2;
-      n2 = nextTerm;
-    }
-    return sequence;
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (newValue !== "") {
-      setItemList(getTowerOfHanoiSeq(newValue));
-    }
-  };
-
   return (
     <div className="Stack">
       <h1 className="ItemHeading">Tower Of Hanoi </h1>
