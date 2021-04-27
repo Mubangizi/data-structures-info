@@ -15,8 +15,8 @@ const SideBar = () => {
         <NavLink to={{ pathname: `/data_structures` }}>
           Basic data structures
         </NavLink>
-        <NavLink to={{ pathname: `/trees` }}>Trees</NavLink>
         <NavLink to={{ pathname: `/sorting` }}>Sorting Algorithms</NavLink>
+        <NavLink to={{ pathname: `/functions` }}>Other functions</NavLink>
         <NavLink to={{ pathname: `/searching` }}>Searching Algorithms</NavLink>
         <NavLink to={{ pathname: `/graphs` }}>Basic graphs</NavLink>
       </div>
