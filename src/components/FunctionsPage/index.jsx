@@ -3,13 +3,14 @@ import Layout from "../Layout";
 import "./FunctionsPage.css";
 import Fibonnacci from "../Fibonnacci";
 import Factorial from "../Factorial";
+import TowerOfHanoi from "../TowerOfHanoi";
 
 const FunctionsPage = () => {
   const [active, setActive] = useState(1);
 
   const menuItems = [
-    { name: "Fibonacci Function", id: 1 },
-    { name: "Factorial Function", id: 2 },
+    { name: "Fibonacci Sequence", id: 1 },
+    { name: "Factorial ", id: 2 },
     { name: "Tower Of Hanoi", id: 3 },
   ];
 
@@ -49,7 +50,9 @@ const FunctionsPage = () => {
         <content className={`ItemContent ${showContent(2)}`}>
           <Factorial />
         </content>
-        <content className={`ItemContent ${showContent(3)}`}></content>
+        <content className={`ItemContent ${showContent(3)}`}>
+          <TowerOfHanoi/>
+        </content>
       </div>
     </Layout>
   );
