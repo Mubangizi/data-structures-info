@@ -47,9 +47,13 @@ const Fibonnacci = () => {
           In mathematics, the Fibonacci numbers, commonly denoted Fn, form a
           sequence, called the Fibonacci sequence, such that each number is the
           sum of the two preceding ones, starting from 0 and 1. That is;
-          <code className="CodeIllustration">F0 = 0, F1 = 1,</code>
+          <code className="CodeIllustration">
+            F<sub>0</sub> = 0, F<sub>1</sub> = 1,
+          </code>
           and
-          <code className="CodeIllustration">Fn = Fn-1 +Fn-2</code>
+          <code className="CodeIllustration">
+            F<sub>n</sub> = F<sub>n-1</sub> +F<sub>n-2</sub>
+          </code>
           for n {">"} 1.
           <h4>Illustration</h4>
           <img src={FibonnacciSpiral} alt="" />

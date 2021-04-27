@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Layout from "../Layout";
 import "./FunctionsPage.css";
 import Fibonnacci from "../Fibonnacci";
+import Factorial from "../Factorial";
 
 const FunctionsPage = () => {
   const [active, setActive] = useState(1);
@@ -45,7 +46,9 @@ const FunctionsPage = () => {
         <content className={`ItemContent ${showContent(1)}`}>
           <Fibonnacci />
         </content>
-        <content className={`ItemContent ${showContent(2)}`}></content>
+        <content className={`ItemContent ${showContent(2)}`}>
+          <Factorial />
+        </content>
         <content className={`ItemContent ${showContent(3)}`}></content>
       </div>
     </Layout>
