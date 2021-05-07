@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BinarySearch from "../BinarySearch";
 import Layout from "../Layout";
+import LinearSearch from "../LinearSearch";
 
 const SearchingPage = () => {
   const [active, setActive] = useState(1);
@@ -41,7 +42,7 @@ const SearchingPage = () => {
           </div>
         </header>
         <content className={`ItemContent ${showContent(1)}`}>
-          <BinarySearch />
+          <LinearSearch />
         </content>
         <content className={`ItemContent ${showContent(2)}`}>
           <BinarySearch />
