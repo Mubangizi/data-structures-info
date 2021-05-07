@@ -5,6 +5,7 @@ import HomePage from "./components/HomePage";
 import NotFoundPage from "./components/NotFoundPage";
 import SortingPage from "./components/SortingPage";
 import FunctionsPage from "./components/FunctionsPage";
+import SearchingPage from "./components/SearchingPage";
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path="/data_structures" component={DatastructuresPage} />
         <Route exact path="/sorting" component={SortingPage} />
         <Route exact path="/functions" component={FunctionsPage} />
+        <Route exact path="/searching" component={SearchingPage} />
         <Route exact path="" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
