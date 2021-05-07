@@ -25,21 +25,21 @@ const LinearSearch = () => {
         <img src={LinearSearchImage} alt="" />
         <h3>Sample code</h3>
         <code className="CodeIllustration">
-          // Searches an unordered array of integers <br />
+          {"//"} Searches an unordered array of integers <br />
           int search(
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;int data[], &nbsp;&nbsp;&nbsp;&nbsp;//input:
-          array
+          &nbsp;&nbsp;&nbsp;&nbsp;int data[], &nbsp;&nbsp;&nbsp;&nbsp;{"//"}
+          input: array
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;int size,
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//input: array size
+          &nbsp;&nbsp;&nbsp;&nbsp;int size, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {"//"}input: array size
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;int value){"{"}{" "}
-          &nbsp;&nbsp;&nbsp;&nbsp;//input: search value
+          &nbsp;&nbsp;&nbsp;&nbsp;int value){"{"} &nbsp;&nbsp;&nbsp;&nbsp;{"//"}{" "}
+          input: search value
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;// output: if found, return index;
+          &nbsp;&nbsp;&nbsp;&nbsp;{"//"} output: if found, return index;
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;//
+          &nbsp;&nbsp;&nbsp;&nbsp;{"//"}
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;otherwise, return –1.
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;for(int index = 0; index {"<"} size; index++)
