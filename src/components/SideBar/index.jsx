@@ -18,7 +18,7 @@ const SideBar = () => {
         <NavLink to={{ pathname: `/sorting` }}>Sorting Algorithms</NavLink>
         <NavLink to={{ pathname: `/functions` }}>Other functions</NavLink>
         <NavLink to={{ pathname: `/searching` }}>Searching Algorithms</NavLink>
-        <NavLink to={{ pathname: `/graphs` }}>Basic graphs</NavLink>
+        {/* <NavLink to={{ pathname: `/graphs` }}>Basic graphs</NavLink> */}
       </div>
       <div className="RemarksSection">
         <p>© 2021 DSA GROUP 12 EVE</p>
