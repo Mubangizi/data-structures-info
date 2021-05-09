@@ -27,6 +27,7 @@ function HomePage() {
           </tr>
           <tr>
             <td>Etyang John Bright</td> <td>19/U/16422/EVE</td>
+            <td>1900716422</td>
           </tr>
           <tr>
             <td>Berocan Samuel</td> <td>19/U/16399/EVE</td> <td>1900716399</td>
